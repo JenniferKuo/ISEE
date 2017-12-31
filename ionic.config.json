@@ -1,0 +1,8 @@
+{
+  "name": "ISEE_test",
+  "app_id": "aa2ef9a4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
