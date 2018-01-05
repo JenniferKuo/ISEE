@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <ion-navbar color="primary" hideBackButton="true">
+    <ion-title>
+      <img alt="Company Logo1" height="40" src="assets/img/eyeglassesicon.svg">
+    </ion-title>
+    <ion-buttons end>
+            <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="page2">
+  <div class="spacer" style="width:300px;height:20px;" id="iSEE-spacer2"></div>
+  <img src="assets/img/imagesqtbnANd9GcQFANoiGzwMeVa4PdAnNJ3GBAZbA-TDlCnubGAc7oR6nbmaYo5k" style="display:block;width:30%;height:auto;margin-left:auto;margin-right:auto;" on-click="goToMyProfile()"/>
+  <h3 id="iSEE-heading1" style="color:#000000;font-weight:300;text-align:center;">
+    Baby Bear
+  </h3>
+  <div id="iSEE-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+    <h5 style="color:#000000;font-weight:300">
+      Information Management, NCTU
+    </h5>
+    <p style="color:#000000;font-weight:400">
+      <img alt="Alt text" src="http://www.caption.me/core/images/star.png" /> Lv.1 Newbie
+    </p>
+  </div>
+  <div id="iSEE-container1" class="level">
+    <div class="spacer" style="width:300px;height:95px;" id="iSEE-spacer38"></div>
+  </div>
+  <button id="iSEE-button1" ion-button color="positive" block style="border-radius:40px 40px 40px 40px;" on-click="goToSelectPool()">
+    Start
+  </button>
+</ion-content>

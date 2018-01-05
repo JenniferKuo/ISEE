@@ -1,0 +1,23 @@
+page-my-question-pool {
+	.box{
+		border: 1px solid #79ACE8;
+		background: white;
+		margin:5px;
+		text-align:center;
+		padding: 10px,0px;
+		display: table-cell; 
+		vertical-align: middle;
+		text-align:center;
+		color: #79ACE8;
+		height:160px;
+		h3,h1 {
+		min-width: 60px;
+	    display: inline-block;
+	    text-align: center;
+	    /* Point */
+	    padding-top: 55px;
+	    padding-bottom: 55px;
+		}
+	}
+	
+}

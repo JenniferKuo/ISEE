@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <ion-navbar color="primary">
+    <ion-title>
+      Add New Question
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar color='primary'>
+    <ion-searchbar
+      placeholder="Search here"
+      [showCancelButton]="true"
+      (ionInput)="onSearchInput($event)"
+      (ionCancel)="onSearchCancel($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id="page18">
+  <form id="addNewQuestion-form31">   
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+
+  </form>
+  <div id="addNewQuestion-container29">
+    <button id="addNewQuestion-button8" ion-button color="stable" on-click="goToNCTU()" class="box">
+      <h3>NCTU</h3>
+    </button>
+    <button id="addNewQuestion-button9" ion-button color="stable" class="box">
+      <h3>Science</h3>
+    </button>
+  </div>
+  <div id="addNewQuestion-container30">
+    <button id="addNewQuestion-button16" ion-button color="stable" class="box">
+      <h3>Design</h3>
+    </button>
+    <button id="addNewQuestion-button17" ion-button color="stable" class="box">
+      <h3>Research</h3>
+    </button>
+  </div>
+  <div id="addNewQuestion-container30">
+    <button id="addNewQuestion-button16" ion-button color="stable" class="box">
+      <h3>HCI</h3>
+    </button>
+    <button id="addNewQuestion-button17" ion-button color="stable" class="box">
+      <h3>Research</h3>
+    </button>
+  </div>
+</ion-content>

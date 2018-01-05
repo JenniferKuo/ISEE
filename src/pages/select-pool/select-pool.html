@@ -1,0 +1,47 @@
+<ion-header no-border>
+  <ion-navbar color="white" hideBackButton="true">
+    <ion-buttons start>
+      <button ion-button icon-only on-click="goToHome()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Select Pool
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page6">
+  <h4 id="selectPool-heading2" style="color:#000000;font-weight:300;">
+    Please select question pool.
+  </h4>
+  <form id="selectPool-form1">
+    <ion-grid>
+      <ion-row style="height:170px">
+        <ion-col class="box">
+          <ion-checkbox></ion-checkbox>
+          <h3>Computer Science</h3>
+        </ion-col>
+        <ion-col class="box">
+          <ion-checkbox></ion-checkbox>
+          <h3>NTU</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row style="height:170px">
+        <ion-col class="box">
+          <ion-checkbox></ion-checkbox>
+          <h3>Programming</h3>
+        </ion-col>
+        <ion-col class="box">
+          <ion-checkbox></ion-checkbox>
+          <h3>Research Proposal</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div id="selectPool-container6" class="next" style="text-align:right">
+      <button id="selectPool-button28" ion-button clear color="positive" icon-right on-click="goToInterviewOption()">
+        <b>NEXT</b>
+        <ion-icon name="arrow-round-forward"></ion-icon>
+      </button>
+    </div>
+  </form>
+</ion-content>

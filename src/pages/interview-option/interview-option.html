@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-navbar color="white" hideBackButton="true">
+    <ion-buttons start>
+      <button ion-button icon-only on-click="goToHome()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Interview Option
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7">
+  <form id="interviewOption-form14">
+    <h3 id="iSEE-heading1" style="color:#000000;font-weight:300;">Please select your interview time</h3>
+    <ion-item id="interviewOption-range1">
+      <ion-row>
+        <ion-col col-8>
+        Interview time
+        </ion-col>
+        <ion-col col-4>
+          <ion-icon name="remove-circle" (click)="decrement()" color="primary"></ion-icon> {{currentNumber}} 
+          <ion-icon name="add-circle" (click)="increment()" color="primary"></ion-icon> mins
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <h3 id="iSEE-heading1" style="color:#000000;font-weight:300;">Please select your interviewer</h3>
+    <div style="text-align: center">
+      <ion-row>
+        <ion-col col-3.3>
+          <img src="{{picSrc1}}" (click)="changePic1()">
+        </ion-col>
+        <ion-col col-3.3>
+          <img src="{{picSrc2}}" (click)="changePic2()">
+        </ion-col>
+        <ion-col col-3.3>
+          <img src="{{picSrc3}}" (click)="changePic3()">
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+  <div id="selectPool-container6">
+      <button id="selectPool-button28" ion-button clear color="positive" icon-left on-click="popView()" style="float:left">
+        <ion-icon name="arrow-round-back"></ion-icon>
+        <b>BACK</b>
+      </button>
+      <button id="selectPool-button28" ion-button clear color="positive" icon-right on-click="goToConnectGlasses()" style="float:right">
+        <b>NEXT</b>
+        <ion-icon name="arrow-round-forward"></ion-icon>
+      </button>
+    </div>
+</ion-content>

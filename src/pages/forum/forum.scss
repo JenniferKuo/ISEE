@@ -1,0 +1,46 @@
+page-forum {
+	.tag-one {
+		text-align: center;
+		background: #79ACE8;
+		height: 80px;
+		width: 80px;
+		border-radius: 40px;
+		color: white;
+		padding: 30px 5px 30px 5px;
+	}
+	.tag-two {
+		text-align: center;
+		background: #79ACE8;
+		height: 80px;
+		width: 80px;
+		border-radius: 40px;
+		color: white;
+		padding: 25px 5px 35px 5px;
+	}
+
+	.box {
+		border: 1px solid #79ACE8;
+		background: white;
+		margin:5px;
+		text-align:center;
+		padding: 10px,0px;
+		display: table-cell; 
+		vertical-align: middle;
+		text-align:center;
+		color: #79ACE8;
+		height:160px;
+		width: 45%;
+		float: left;
+		h3,h1 {
+		min-width: 60px;
+	    display: inline-block;
+	    text-align: center;
+	    /* Point */
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+		}
+	}
+	ion-segment {
+		margin: 20px 0;
+	}
+}

@@ -1,0 +1,21 @@
+page-select-pool {
+	.box{
+		background: white;
+		border: #79ACE8 1px solid;
+		border-radius: 5px;
+		margin:5px;
+		padding: 10px,0px;
+		display: table-cell; 
+		color: #79ACE8;
+		height:160px;
+		h3,h1 {
+		vertical-align: middle;
+		min-width: 60px;
+	    display: block;
+	    text-align: center;
+	    /* Point */
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+		}
+	}
+}

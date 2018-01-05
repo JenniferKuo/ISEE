@@ -1,0 +1,74 @@
+<ion-header no-border>
+  <ion-navbar color="primary" hideBackButton="true">
+    <ion-title color="primary">
+      Forum
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <ion-row>
+    <ion-col col-3 on-click="goToWhyAreYouInterestedInOurSchool()">
+    <!-- <button id="forum-button20" ion-button color="stable" style="font-size:10px;border-radius:0px 0px 0px 0px;"></button> -->
+    <div class="tag-one">Personality</div>
+    </ion-col>
+    <ion-col col-3 on-click="goToWhyAreYouInterestedInOurSchool()">
+    <!-- <button id="forum-button21" ion-button color="stable" style="font-size:10px;border-radius:0px 0px 0px 0px;"></button> -->
+    <div class="tag-one">Acedemic</div>
+    </ion-col>
+    <ion-col col-3 on-click="goToWhyAreYouInterestedInOurSchool()">
+    <!-- <button id="forum-button22" ion-button color="stable" style="font-size:10px;"></button> -->
+    <div class="tag-one">Skill</div>
+    </ion-col>
+    <ion-col col-3 on-click="goToWhyAreYouInterestedInOurSchool()">
+    <!-- <button id="forum-button23" ion-button color="stable" style="font-size:10px;"></button> -->
+    <div class="tag-two">Career Planning</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-segment [(ngModel)]="answer" color="primary">
+    <ion-segment-button value="others">
+      Other's Answer
+    </ion-segment-button>
+    <ion-segment-button value="my">
+      My Answer
+    </ion-segment-button>
+  </ion-segment>
+  
+  <div [ngSwitch]="answer">
+    <ion-list *ngSwitchCase="'others'">
+      <ion-item color="light" on-click="goToWhyAreYouInterestedInOurSchool()" id="forum-list-item18" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        Why are you interested in our school blah blah blah?
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="light" id="forum-list-item19" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        Tell us your research proposal
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="light" id="forum-list-item20" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        What are your academic strength?
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="light" id="forum-list-item21" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        What do you expect to be doing ten years from now?
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+  </ion-list>
+
+    <ion-list *ngSwitchCase="'my'">
+      <ion-item color="light" id="forum-list-item19" on-click="goToMyVideo()" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        Tell us your research proposal
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="light" id="forum-list-item18" text-wrap>
+        <ion-icon style="color:primary" name="help-circle" item-left></ion-icon>
+        Why are you interested in our school blah blah blah?
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
